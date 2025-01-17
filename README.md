@@ -38,7 +38,7 @@ kubectl argo rollouts dashboard
 Change the image of the docker image you are using. Experiment with `blue`, `yellow`, `green`, `red`, etc.  
 ```
 kubectl argo rollouts set image rollouts-demo \
-  rollouts-demo=argoproj/rollouts-demo:yellow
+  rollouts-demo=quay.io/rhn_support_abaral1/spring-test-rollout:2.0
 ```
 
 Once you set the image, use the methods in step 2 to watch the rollout. If you want to connect to the application the below command works in minikube - otherwise you need to setup an ingress.
