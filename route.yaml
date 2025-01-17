@@ -1,0 +1,12 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: rollouts-demo
+spec:
+  to:
+    kind: Service
+    name: rollouts-demo
+    weight: 100
+  port:
+    targetPort: http
+  wildcardPolicy: None
