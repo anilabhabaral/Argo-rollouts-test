@@ -47,12 +47,6 @@ kubectl argo rollouts set image rollouts-demo \
 curl rollout.test.com
 ```
 
-Once you set the image, use the methods in step 2 to watch the rollout. If you want to connect to the application the below command works in minikube - otherwise you need to setup an ingress.
-
-```
-minikube service --all -n default
-```
-
 
 
 
