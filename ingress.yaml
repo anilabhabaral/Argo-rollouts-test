@@ -4,13 +4,13 @@ metadata:
   name: rollout-demo-ingress
 spec:
   rules:
-  - host: "argo.url.com"
+  - host: "rollout.test.com"
     http:
       paths:
       - pathType: Prefix
-        path: "/helloworld"
+        path: "/"
         backend:
           service:
-            name: jboss-helloworld-service
+            name: rollouts-demo-service
             port:
               number: 80
