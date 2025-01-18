@@ -1,14 +1,14 @@
 # rollout-test
 
 ## Install ArgoRollouts into your Cluster
-https://argoproj.github.io/argo-rollouts/installation/#controller-installation
+Follow: https://argoproj.github.io/argo-rollouts/installation/#controller-installation
 ```
 kubectl create namespace argo-rollouts
 kubectl apply -n argo-rollouts -f https://github.com/argoproj/argo-rollouts/releases/latest/download/install.yaml
 ```
 
 ## Install argo rollouts plugin for kubectl
-https://argoproj.github.io/argo-rollouts/installation/#kubectl-plugin-installation
+Follow: https://argoproj.github.io/argo-rollouts/installation/#kubectl-plugin-installation
 ```
 brew install argoproj/tap/kubectl-argo-rollouts
 ```
@@ -17,6 +17,7 @@ brew install argoproj/tap/kubectl-argo-rollouts
 ```
 minikube addons enable ingress
 ```
+Follow: https://kubernetes.io/docs/tasks/access-application-cluster/ingress-minikube/
 
 ## Rollout Demo
 
