@@ -13,6 +13,11 @@ https://argoproj.github.io/argo-rollouts/installation/#kubectl-plugin-installati
 brew install argoproj/tap/kubectl-argo-rollouts
 ```
 
+## Install a ingress controller for example nginx. If using minikube use below command:
+```
+minikube addons enable ingress
+```
+
 ## Rollout Demo
 
 1. Create the rollout, service and ingress
