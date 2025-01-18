@@ -15,10 +15,11 @@ brew install argoproj/tap/kubectl-argo-rollouts
 
 ## Rollout Demo
 
-1. Create the rollout and service
+1. Create the rollout, service and ingress
 ```
-kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/rollout.yaml
-kubectl apply -f https://raw.githubusercontent.com/argoproj/argo-rollouts/master/docs/getting-started/basic/service.yaml
+kubectl apply -f https://raw.githubusercontent.com/anilabhabaral/rollout-test/refs/heads/main/rollout.yaml
+kubectl apply -f https://raw.githubusercontent.com/anilabhabaral/rollout-test/refs/heads/main/service.yaml
+kubectl apply -f https://raw.githubusercontent.com/anilabhabaral/rollout-test/refs/heads/main/ingress.yaml
 ```
 
 2. Watching rollouts
@@ -39,6 +40,11 @@ Change the image of the docker image you are using. Experiment with `blue`, `yel
 ```
 kubectl argo rollouts set image rollouts-demo \
   rollouts-demo=quay.io/rhn_support_abaral1/spring-test-rollout:2.0
+```
+
+4. Access the application using ingress:
+```
+curl rollout.test.com
 ```
 
 Once you set the image, use the methods in step 2 to watch the rollout. If you want to connect to the application the below command works in minikube - otherwise you need to setup an ingress.
