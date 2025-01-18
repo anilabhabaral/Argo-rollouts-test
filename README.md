@@ -42,7 +42,7 @@ kubectl argo rollouts dashboard
 
 3. Rollout a new image
 
-Change the image of the docker image you are using. Experiment with `blue`, `yellow`, `green`, `red`, etc.  
+Change the image of the docker image you are using. Experiment with `1.0`, `2.0` etc.  
 ```
 kubectl argo rollouts set image rollouts-demo \
   rollouts-demo=quay.io/rhn_support_abaral1/spring-test-rollout:2.0
