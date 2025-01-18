@@ -1,4 +1,4 @@
-# rollout-test
+# Argo Rollouts
 
 ## Install ArgoRollouts into your Cluster
 Follow: https://argoproj.github.io/argo-rollouts/installation/#controller-installation
